@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { CheckCircle, XCircle, Calendar, Clock, MapPin, Users, ArrowLeft, Download, Mail } from 'lucide-react';
+import { CheckCircle, XCircle, Calendar, Clock, Users, ArrowLeft, Download, Mail } from 'lucide-react';
 import { bookingService } from '../services/api';
 import LoadingSpinner from '../components/LoadingSpinner';
 import toast from 'react-hot-toast';

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Star, MapPin, Clock, Users, Calendar, ArrowLeft, CheckCircle } from 'lucide-react';
+import { Star, MapPin, Clock, Users, ArrowLeft, CheckCircle } from 'lucide-react';
 import { Experience, Slot } from '../types';
 import { experienceService } from '../services/api';
 import LoadingSpinner from '../components/LoadingSpinner';

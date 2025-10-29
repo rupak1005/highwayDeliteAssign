@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
-import { ArrowLeft, CreditCard, User, Mail, Phone, Calendar, Clock, MapPin, Users, Tag } from 'lucide-react';
+import { ArrowLeft, CreditCard, User, Calendar, Clock, MapPin, Users, Tag } from 'lucide-react';
 import { Experience, Slot, BookingRequest, PromoValidationResponse } from '../types';
 import { bookingService, promoService } from '../services/api';
 import LoadingSpinner from '../components/LoadingSpinner';

@@ -6,7 +6,6 @@ import toast from 'react-hot-toast';
 // Components
 import Header from './components/Header';
 import Footer from './components/Footer';
-import LoadingSpinner from './components/LoadingSpinner';
 
 // Pages
 import HomePage from './pages/HomePage';
