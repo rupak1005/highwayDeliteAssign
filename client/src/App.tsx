@@ -17,16 +17,15 @@ import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   useEffect(() => {
-    // Check API health on app load
     const checkHealth = async () => {
       try {
         const response = await healthService.checkHealth();
-        if (response.success) {
-          console.log('✅ API is healthy:', response.data);
+        if (!response.success) {
+          toast.error('Unable to connect to server');
         }
       } catch (error) {
-        console.error('❌ API health check failed:', error);
-        toast.error('Unable to connect to server. Please try again later.');
+        console.error('API check failed:', error);
+        toast.error('Unable to connect to server');
       }
     };
 

@@ -79,7 +79,7 @@ router.post('/', [
         }
       }
 
-      const bookingReference = `BK${Date.now()}${Math.random().toString(36).substr(2覚, 5).toUpperCase()}`;
+      const bookingReference = `BK${Date.now()}${Math.random().toString(36).substr(2, 5).toUpperCase()}`;
 
       const bookingQuery = `
         INSERT INTO bookings (

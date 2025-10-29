@@ -87,14 +87,13 @@ const HomePage = () => {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <LoadingSpinner size="lg" text="Loading amazing experiences..." />
+        <LoadingSpinner size="lg" text="Loading experiences..." />
       </div>
     );
   }
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      {/* Hero Section */}
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
           Discover Amazing
@@ -123,7 +122,6 @@ const HomePage = () => {
             </div>
           </div>
 
-          {/* Category Filter */}
           <div>
             <select
               value={selectedCategory}
@@ -136,7 +134,6 @@ const HomePage = () => {
             </select>
           </div>
 
-          {/* Search Button */}
           <div>
             <button
               onClick={handleSearch}
@@ -148,7 +145,6 @@ const HomePage = () => {
           </div>
         </div>
 
-        {/* Price Range */}
         <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
           <div>
             <label className="label">Min Price</label>
@@ -182,7 +178,6 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* Experiences Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredExperiences.map((experience) => (
           <Link
